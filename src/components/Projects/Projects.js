@@ -25,6 +25,7 @@ function Projects() {
             <ProjectCard
               imgPath={chitchat}
               isBlog={false}
+              projectKey={'chitchat'}
               title="ChitChat"
               description="Made with ReactJS, Express, NodeJs, MongoDB and Socket.io, ChitChat makes staying connected easy with real-time messaging, group chats, and typing indicators that keep conversations flowing naturally—just like talking in person."
               ghLink="https://github.com/usama455/chat-app-mern"
@@ -68,6 +69,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={baskyt}
+              projectKey={'baskyt'}
               isBlog={false}
               title="Baskyt"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."

@@ -3,8 +3,16 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { IoIosLink } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 function ProjectCards(props) {
+  const navigate = useNavigate();
+
+  const handleDetailsClick = () => {
+    navigate(`/project/${props.projectKey}`);
+  };
+
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -17,8 +25,6 @@ function ProjectCards(props) {
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
         </Button>
-        {"\n"}
-        {"\n"}
 
         {!props.isBlog && props.demoLink && (
           <Button
@@ -31,8 +37,22 @@ function ProjectCards(props) {
             {"Demo"}
           </Button>
         )}
+
+        {/* Details Button */}
+        {props.projectKey && (
+          <Button
+            variant="primary"
+            onClick={handleDetailsClick}
+            style={{ marginLeft: "10px" }}
+          >
+            <IoIosLink />&nbsp;
+
+            Details
+          </Button>
+        )}
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;
