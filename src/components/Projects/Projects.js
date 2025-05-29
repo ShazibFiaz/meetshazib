@@ -28,7 +28,7 @@ function Projects() {
               isBlog={false}
               projectKey={'chirp'}
               title="Chirp- Twitter Clone"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              description=" Chirp is a minimalist Twitter clone focused on speed, simplicity, and real-time interaction. Users can sign up, log in, and share short text-based updates in a clean, distraction-free UI."
               ghLink="https://github.com/usama455/Editor.io"
               // demoLink="https://editor.soumya-jit.tech/"              
             />

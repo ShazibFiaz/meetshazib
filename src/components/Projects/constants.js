@@ -13,7 +13,7 @@ const projectData = {
   title: "Chirp – Twitter Clone",
   tagline: "Tweet your thoughts. Instantly.",
   img: chirp, // Replace with the actual image import
-  tags: ["Social", "React", "Firebase", "Realtime"],
+  tags: ["Social", "React", "Node", "Realtime", "Socket.io"],
 description: `
   Chirp is a minimalist Twitter clone focused on speed, simplicity, and real-time interaction. Users can sign up, log in, and share short text-based updates in a clean, distraction-free UI.
 
