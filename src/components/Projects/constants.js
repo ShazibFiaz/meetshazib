@@ -2,8 +2,147 @@ import chitchat from "../../Assets/Projects/ChitChatDetailPage.png";
 import baskyt from "../../Assets/Projects/BaskytDetailPage.png"
 import dashboardUI from "../../Assets/Projects/chitchat-dashboard-ui.png";
 import chatInterface from "../../Assets/Projects/chat-interface.png";
-
+import chirp from "../../Assets/Projects/chirp.png"
+import chirpVid from '../../Assets/Projects/chirp-mac-vid.mp4'
+import chirpLiveTwtVid from '../../Assets/Projects/chirp-live-tweet.mp4'
+import chirpMobile from '../../Assets/Projects/chirp-mobile.png'
 const projectData = {
+
+  chirp: 
+  {
+  title: "Chirp – Twitter Clone",
+  tagline: "Tweet your thoughts. Instantly.",
+  img: chirp, // Replace with the actual image import
+  tags: ["Social", "React", "Firebase", "Realtime"],
+description: `
+  Chirp is a minimalist Twitter clone focused on speed, simplicity, and real-time interaction. Users can sign up, log in, and share short text-based updates in a clean, distraction-free UI.
+
+  Built with React, Node.js, and Socket.io, Chirp enables real-time tweet delivery and live feed updates. Authentication is handled using JWT, while MongoDB powers backend data storage.
+
+  Developed as a solo full-stack project, Chirp shows how modern technologies can create a smooth, responsive social experience with real-time communication at its core.
+`,
+
+features: [
+  "Real-time tweet feed using Socket.io for instant updates",
+  "Secure authentication and session handling with JWT",
+  "Create and delete short text-only tweets",
+  "Fully responsive design for mobile and desktop",
+  "Clean, distraction-free user interface focused on usability",
+  "Scalable REST API powered by Express and MongoDB"
+],
+stack: {
+  "Frontend": ["React.js", "Tailwind CSS"],
+  "Backend": ["Node.js", "Express.js", "Socket.io"],
+  "Database": ["MongoDB"],
+  "Authentication": ["JSON Web Tokens (JWT)"],
+  "State Management": ["React Hooks", "Context API"],
+  "Deployment": ["Render", "Vercel"] // or use your actual platforms (e.g., Heroku, Netlify)
+}
+,
+  github: "https://github.com/usama455/twitter-clone", 
+  demo: "https://twitter-clone-fe-six.vercel.app/signin", 
+  whySpecial: `Chirp takes the core of social media—sharing thoughts—and distills it into a fast, real-time experience. By leveraging Firebase's tools, it removes backend complexity while still delivering a responsive and fully interactive app.`,
+  
+  // NEW: Media section with support for images and videos
+media: [
+  {
+    type: 'video',
+    src: chirpLiveTwtVid,
+    title: 'Real-Time Interaction',
+    caption: 'Chirp delivers instant feedback with real-time tweet updates using Socket.io. This video shows users posting tweets and seeing them reflected across all connected clients without delay.'
+  },
+  {
+    type: 'image',
+    src: chirpMobile,
+    title: 'Mobile-First Design',
+    caption: 'Built with responsive design principles, Chirp offers a seamless user experience across all screen sizes. Whether on mobile, tablet, or desktop, the interface remains intuitive and fast.'
+  },
+  {
+    type: 'video',
+    src: chirpVid,
+    title: 'Clean & Minimal UI',
+    caption: 'This walkthrough highlights Chirp’s modern, clutter-free interface—focused on usability and readability. The design ensures content remains front and center while offering smooth transitions.'
+  }
+]
+
+,
+  
+  challenges: [
+    {
+      challenge: "Real-time feed updates without page reloads",
+      solution: "Used Firestore's onSnapshot listeners to sync tweets in real time"
+    },
+    {
+      challenge: "Ensuring clean and minimal UI across all screen sizes",
+      solution: "Leveraged Tailwind CSS utilities and responsive design principles"
+    },
+    {
+      challenge: "Managing user authentication state across components",
+      solution: "Implemented React Context API with Firebase Auth persistence"
+    }
+  ],
+  startDate: "October 2023",
+  completionDate: "December 2023",
+  category: "Social Media",
+  priority: 2
+},
+//   chirp: {
+//   title: "Chirp – Twitter Clone",
+//   tagline: "Tweet your thoughts. Instantly.",
+//   img: chirp, // Replace with the actual image import
+//   tags: ["Social", "React", "Firebase", "Realtime"],
+//   description: `
+//     Chirp is a minimalist Twitter clone built for speed, simplicity, and real-time interaction. Users can sign up, log in, and instantly start posting short-form text updates. 
+
+//     Built with React and Firebase, Chirp uses Firestore’s real-time database to sync tweets instantly across users. Its clean interface, responsive design, and core features recreate the essence of Twitter without the noise.
+
+//     Designed as a solo full-stack project, Chirp demonstrates how React, Firebase Auth, and Firestore can work together to build a seamless, real-time social experience.
+//   `,
+//   features: [
+//     "Real-time tweet feed powered by Firestore listeners",
+//     "Sign up and log in securely with Firebase Auth",
+//     "Post and delete short text-based tweets",
+//     "Responsive layout optimized for all devices",
+//     "Minimalist, distraction-free UI",
+//     "Instant update propagation across users"
+//   ],
+//   stack: {
+//     "Frontend": ["React.js", "Tailwind CSS"],
+//     "Backend": ["Firebase Functions (optional)"],
+//     "Database": ["Firebase Firestore"],
+//     "Authentication": ["Firebase Auth"],
+//     "State Management": ["React Hooks"],
+//     "Deployment": ["Firebase Hosting"]
+//   },
+//   github: "https://github.com/usama455/twitter-clone", 
+//   demo: "https://twitter-clone-fe-six.vercel.app/signin", 
+//   whySpecial: `Chirp takes the core of social media—sharing thoughts—and distills it into a fast, real-time experience. By leveraging Firebase’s tools, it removes backend complexity while still delivering a responsive and fully interactive app.`,
+//   screenshots: [
+//     {
+//       img: chirp, 
+//       caption: "Live tweet feed with real-time updates"
+//     },
+//     {
+//       img: chirp, 
+//       caption: "Tweet creation interface"
+//     }
+//   ],
+//   challenges: [
+//     {
+//       challenge: "Real-time feed updates without page reloads",
+//       solution: "Used Firestore’s onSnapshot listeners to sync tweets in real time"
+//     },
+//     {
+//       challenge: "Ensuring clean and minimal UI across all screen sizes",
+//       solution: "Leveraged Tailwind CSS utilities and responsive design principles"
+//     }
+//   ],
+//   startDate: "October 2023",
+//   completionDate: "December 2023",
+//   category: "Social Media",
+//   priority: 2
+// },
+
   chitchat: {
     title: "ChitChat – Real-Time Messaging App",
     tagline: "Digital conversation that feels real.",
@@ -117,45 +256,6 @@ const projectData = {
     category: "E-Commerce",
     priority: 2
   },
-
-  // Template for adding more projects:
-  /* 
-  projectKey: {
-    title: "Project Name",
-    tagline: "Short, catchy description",
-    img: importedImage,
-    tags: ["Tag1", "Tag2", "Tag3"],
-    description: `Detailed description of the project`,
-    features: [
-      "Feature 1",
-      "Feature 2",
-      "Feature 3",
-    ],
-    stack: {
-      "Category1": ["Tool1", "Tool2"],
-      "Category2": ["Tool3", "Tool4"],
-    },
-    github: "https://github.com/username/repo",
-    demo: "https://demo-link.com",
-    whySpecial: `What makes this project unique or special`,
-    screenshots: [
-      {
-        img: screenshot1,
-        caption: "Caption for screenshot 1"
-      }
-    ],
-    challenges: [
-      {
-        challenge: "Challenge faced",
-        solution: "How it was solved"
-      }
-    ],
-    startDate: "Month Year",
-    completionDate: "Month Year",
-    category: "Project Category",
-    priority: 2
-  }
-  */
 };
 
 export default projectData;

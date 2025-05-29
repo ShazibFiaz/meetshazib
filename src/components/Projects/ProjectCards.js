@@ -1,12 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
-import { IoIosLink } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 
-function ProjectCards(props) {
+function ProjectCard(props) {
   const navigate = useNavigate();
 
   const handleDetailsClick = () => {
@@ -14,45 +10,36 @@ function ProjectCards(props) {
   };
 
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+    <Card 
+      className="project-card-view"
+    >
+      <div className="card-image-container" onClick={handleDetailsClick}>
+        <Card.Img 
+          variant="top" 
+          src={props.imgPath} 
+          alt="card-img"
+          className="card-image"
+        />
+        <div className="image-overlay">
+          <div className="overlay-content">
+            <span className="view-project">View Project</span>
+          </div>
+        </div>
+      </div>
+      
+      <Card.Body className="card-body-enhanced">
+        <div className="card-header-section">
+          <Card.Title className="card-title-enhanced">
+            {props.title}
+          </Card.Title>
+        </div>
+        
+        <Card.Text className="card-description">
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
-
-        {/* Details Button */}
-        {props.projectKey && (
-          <Button
-            variant="primary"
-            onClick={handleDetailsClick}
-            style={{ marginLeft: "10px" }}
-          >
-            <IoIosLink />&nbsp;
-
-            Details
-          </Button>
-        )}
       </Card.Body>
     </Card>
   );
 }
 
-export default ProjectCards;
+export default ProjectCard;
