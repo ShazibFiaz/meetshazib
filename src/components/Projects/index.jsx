@@ -1,21 +1,10 @@
-"use client";
-
 import { Link } from 'react-router-dom'
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react"
+
+
 import AnimationWrapper from "../AnimationWrapper";
 
 export default function ClientProjectView({ data }) {
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) return null; // Fixes hydration mismatch in Next.js
-
-    // Sort projects by creation date (latest first)
-    const sortedData = [...data].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
     // **Framer Motion Variants**
     const sectionVariants = {
@@ -84,7 +73,7 @@ export default function ClientProjectView({ data }) {
                     initial="hidden"
                     animate="visible"
                 >
-                    {sortedData?.map((item, index) => {
+                    {data?.map((item, index) => {
                         const images = item.imageUrl || [];
                         const firstImage = images.length > 0 ? images[0] : null;
 

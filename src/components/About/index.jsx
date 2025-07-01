@@ -54,9 +54,9 @@ export default function ClientAboutView({ data }) {
 
     // Convert data fields to numbers and append "Years" for experience
     const aboutDataInfo = [
-        { label: "Clients", value: Number(data?.noofclients) || 0 },
-        { label: "Projects", value: Number(data?.noofprojects) || 0 },
-        { label: "Years Experience", value: (Number(data?.yearsofexperience) || 0) + "+" },
+        { label: "Clients", value: Number(data?.totalClients) || 0 },
+        { label: "Projects", value: Number(data?.totalProjects) || 0 },
+        { label: "Years Experience", value: (Number(data?.totalExperience) || 0) + "+" },
     ];
 
     const headingText = "Why Hire Me For Your Next Project?";

@@ -12,8 +12,8 @@
   "dependencies": {
     "@headlessui/react": "^2.2.4",
     "@tailwindcss/vite": "^4.1.11",
-    "framer-motion": "^12.20.1",
     "lucide-react": "^0.525.0",
+    "motion": "^12.22.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-helmet": "^6.1.0",
@@ -27,7 +27,8 @@
     "react-vertical-timeline-component": "^3.5.3",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^4.1.11",
-    "three": "^0.178.0"
+    "three": "^0.178.0",
+    "yet-another-react-lightbox": "^3.24.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",

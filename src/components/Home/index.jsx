@@ -36,13 +36,13 @@ export default function ClientHomeView({ data }) {
   const socialX = useTransform(scrollYProgress, [0, 1], [0, 400]);
 
   const [hovered, setHovered] = useState(null);
-  const hireMeLink = data?.[0]?.hireme || "#";
-  const upworkLink = data?.[0]?.upwork?.trim() || "";
-  const slackLink = data?.[0]?.slack?.trim() || "";
-  const githubLink = data?.[0]?.github?.trim() || "";
-  const stackoverflow = data?.[0]?.stack?.trim() || "";
-  const linkedin = data?.[0]?.linkedin?.trim() || "";
-  const rawSummary = data?.[0]?.summary || "Passionate Developer, Problem Solver";
+  const hireMeLink = data?.hireme || "#";
+  const upworkLink = data?.upwork?.trim() || "";
+  const slackLink = data?.slack?.trim() || "";
+  const githubLink = data?.github?.trim() || "";
+  const stackoverflow = data?.stack?.trim() || "";
+  const linkedin = data?.linkedin?.trim() || "";
+  const rawSummary = data?.summary || "Passionate Developer, Problem Solver";
   const summaryParts = rawSummary.split(",");
 
   const socialIcons = [
@@ -119,7 +119,7 @@ useEffect(() => {
     stars.rotation.y += 0.0001;
 
     // Update each star's opacity for the twinkling effect
-    const positions = starGeometry.attributes.position.array;
+    // const positions = starGeometry.attributes.position.array;
     const alphas = starGeometry.attributes.alpha.array;
 
     for (let i = 0; i < alphas.length; i++) {
@@ -219,14 +219,8 @@ useEffect(() => {
             <div className="flex flex-col justify-center items-center sm:items-start">
               <span className="text-[#FEC544] text-xl xl:text-[40px] lg:text-2xl px-1.5">Hey there, </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[80px] leading-tight text-white text-center sm:text-left mt-4 lg:mt-6">
-                {data && data.length > 0 ? (
-                  data[0].heading.split(" ").map((item, index) => (
-                    <span key = {index} className="font-black bg-clip-text">{ item} </span>
-                   ))
-                ) 
-                : (
-                  <span className="text-gray-500">Loading...</span>
-                ) } 
+          
+                    <span  className="font-black bg-clip-text">{ data.heading} </span>
               </h1>
 
               <h2 className="mt-4 lg:mt-6 mb-6 text-gray-400 text-lg sm:text-xl lg:text-2xl xl:text-3xl leading-snug text-center sm:text-left">
