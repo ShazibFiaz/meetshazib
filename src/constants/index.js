@@ -1,19 +1,3 @@
-import Chirp from '../../public/assets/Projects/chirp/chirp-banner.png';
-import ChirpLiveVid from '../../public/assets/Projects/chirp/chirp-live-tweet.mp4';
-import ChirpMacVid from '../../public/assets/Projects/chirp/chirp-mac-vid.mp4';
-import ChirpMobile from '../../public/assets/Projects/chirp/chirp-mobile.png';
-
-import ChitChat from '../../public/assets/Projects/chitchat/chitchat.png';
-import ChatMobileVid from '../../public/assets/Projects/chitchat/chitChatMobileVid.mp4';
-import ChatGroup from '../../public/assets/Projects/chitchat/createGroupChat.png';
-import ChatConnect from '../../public/assets/Projects/chitchat/chatConnect.png';
-
-import Baskyt from '../../public/assets/Projects/baskyt/baskyt.png'
-import BaskytPhone from '../../public/assets/Projects/baskyt/baskyt-phone.png'
-import BaskytVid from '../../public/assets/Projects/baskyt/baskyt-vid.mp4'
-import BaskytMac from '../../public/assets/Projects/baskyt/baskyt-mac.png'
-
-
 export const HOME_DATA = {
   heading: "Meet Usama",
   summary: "Lead Full Stack Developer ",
@@ -32,6 +16,7 @@ export const ABOUT = {
   skills:
     "JavaScript 90, TypeScript 85, React 92, Node.js 88, MongoDB 82, Express.js 85, GraphQL 78, Docker 75",
 };
+
 export const EXPERIENCE = [
   {
     position: "Lead Full Stack Developer",
@@ -78,27 +63,26 @@ export const PROJECTS = [
       media: [
         {
         type: 'image',
-        src: Chirp
+        src: '/assets/Projects/chirp/chirp-banner.png'
         },
 
         {
         type: 'video',
-        src: ChirpMacVid
+        src: '/assets/Projects/chirp/chirp-mac-vid.mp4'
         },
 
         {
         type: 'image',
-        src: ChirpMobile
+        src: '/assets/Projects/chirp/chirp-mobile.png'
         },
 
         {
         type: 'video',
-        src: ChirpLiveVid
+        src: '/assets/Projects/chirp/chirp-live-tweet.mp4'
         }
       ],
-      banner: Chirp,        // "playstore": "https://play.google.com/store/apps/details?id=com.taskmaster.pro",
+      banner: '/assets/Projects/chirp/chirp-banner.png',
         techstack: "MongoDB, Express, React, Node.js, Firebase, Redux",
-        // "ios": "https://apps.apple.com/app/taskmaster-pro/id1234567890",
         weburl: "https://twitter-clone-fe-six.vercel.app/signin",
         projecttype: "Full Stack Web App",
         tags: ['react', 'mongo', 'node']
@@ -111,36 +95,33 @@ export const PROJECTS = [
       
       Built with React and Node.js, Baskyt allows users to seamlessly add items to their cart and calculate the total price across multiple locations. Users can track orders in real-time and benefit from discounts based on the combined total.
 
-      The app leverages modern technologies to offer a smooth user experience, whether you’re ordering for a group at work or with friends.
+      The app leverages modern technologies to offer a smooth user experience, whether you're ordering for a group at work or with friends.
     `,
      shortdescription: `Order together, save together. Group ordering made easy!`,
     github: "https://github.com/usama455/baskyt-app",
       media: [
         {
         type: 'image',
-        src: Baskyt
+        src: '/assets/Projects/baskyt/baskyt.png'
         },
 
         {
         type: 'image',
-        src: BaskytPhone
+        src: '/assets/Projects/baskyt/baskyt-phone.png'
         },
 
         {
         type: 'video',
-        src: BaskytVid
+        src: '/assets/Projects/baskyt/baskyt-vid.mp4'
         },
 
         {
         type: 'image',
-        src: BaskytMac
+        src: '/assets/Projects/baskyt/baskyt-mac.png'
         }
       ],
-      banner: Baskyt,
-      // "playstore": "https://play.google.com/store/apps/details?id=com.taskmaster.pro",
+      banner: '/assets/Projects/baskyt/baskyt.png',
       techstack: "MongoDB, Express, React, Node.js, Redux",
-      // "ios": "https://apps.apple.com/app/taskmaster-pro/id1234567890",
-      // weburl: "https://twitter-clone-fe-six.vercel.app/signin",
       projecttype: "Full Stack Web App",
       tags: ['react', 'mongo', 'node', 'socket.io']
       },
@@ -159,36 +140,31 @@ description: `
       media: [
         {
         type: 'image',
-        src: ChitChat
+        src: '/assets/Projects/chitchat/chitchat.png'
         },
 
         {
         type: 'video',
-        src: ChatMobileVid
+        src: '/assets/Projects/chitchat/chitChatMobileVid.mp4'
         },
 
         {
         type: 'image',
-        src: ChatGroup
+        src: '/assets/Projects/chitchat/createGroupChat.png'
         },
 
         {
         type: 'image',
-        src: ChatConnect
+        src: '/assets/Projects/chitchat/chatConnect.png'
         }
       ],
-      banner: ChitChat,
-      // "playstore": "https://play.google.com/store/apps/details?id=com.taskmaster.pro",
+      banner: '/assets/Projects/chitchat/chitchat.png',
       techstack: "MongoDB, Express, React, Node.js, Redux",
-      // "ios": "https://apps.apple.com/app/taskmaster-pro/id1234567890",
-      // weburl: "https://twitter-clone-fe-six.vercel.app/signin",
       projecttype: "Full Stack Web App",
       tags: ['react', 'mongo', 'node', 'socket.io']
       },
+];
 
-    
-    
-    ];
 export const SERVICES = [
   {
     title: "Frontend Development",
