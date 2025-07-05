@@ -6,7 +6,7 @@ import { FaSlack,FaStackOverflow } from "react-icons/fa";
 
 import { Button } from "@headlessui/react";
 import { Typewriter } from "react-simple-typewriter";
-import usama from "../../assets/usama.png";
+import profileImage from "../../../public/assets/profileImage.png";
 import * as THREE from "three";
 
 function variants() {
@@ -145,7 +145,7 @@ useEffect(() => {
       
         <div className="mt-10 w-50 h-50 relative z-20 rounded-full overflow-hidden border-4 border-white shadow-lg">
    <img
-        src={usama}
+        src={profileImage}
         alt="Profile Picture"
         className="object-cover w-full h-full"
         style={{ objectFit: 'cover' }}
@@ -206,7 +206,7 @@ useEffect(() => {
         >
             {/* fill */}
    <img
-        src={usama}
+        src={profileImage}
         alt="Profile Picture"
         className="object-cover w-full h-full"
         style={{ objectFit: 'cover' }}
