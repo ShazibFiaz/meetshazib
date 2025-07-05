@@ -1,17 +1,17 @@
-import Chirp from '../assets/Projects/chirp/chirp-banner.png';
-import ChirpLiveVid from '../assets/Projects/chirp/chirp-live-tweet.mp4';
-import ChirpMacVid from '../assets/Projects/chirp/chirp-mac-vid.mp4';
-import ChirpMobile from '../assets/Projects/chirp/chirp-mobile.png';
+import Chirp from '../../public/assets/Projects/chirp/chirp-banner.png';
+import ChirpLiveVid from '../../public/assets/Projects/chirp/chirp-live-tweet.mp4';
+import ChirpMacVid from '../../public/assets/Projects/chirp/chirp-mac-vid.mp4';
+import ChirpMobile from '../../public/assets/Projects/chirp/chirp-mobile.png';
 
-import ChitChat from '../assets/Projects/chitchat/chitchat.png';
-import ChatMobileVid from '../assets/Projects/chitchat/chitChatMobileVid.mp4';
-import ChatGroup from '../assets/Projects/chitchat/createGroupChat.png';
-import ChatConnect from '../assets/Projects/chitchat/chatConnect.png';
+import ChitChat from '../../public/assets/Projects/chitchat/chitchat.png';
+import ChatMobileVid from '../../public/assets/Projects/chitchat/chitChatMobileVid.mp4';
+import ChatGroup from '../../public/assets/Projects/chitchat/createGroupChat.png';
+import ChatConnect from '../../public/assets/Projects/chitchat/chatConnect.png';
 
-import Baskyt from '../assets/Projects/baskyt/baskyt.png'
-import BaskytPhone from '../assets/Projects/baskyt/baskyt-phone.png'
-import BaskytVid from '../assets/Projects/baskyt/baskyt-vid.mp4'
-import BaskytMac from '../assets/Projects/baskyt/baskyt-mac.png'
+import Baskyt from '../../public/assets/Projects/baskyt/baskyt.png'
+import BaskytPhone from '../../public/assets/Projects/baskyt/baskyt-phone.png'
+import BaskytVid from '../../public/assets/Projects/baskyt/baskyt-vid.mp4'
+import BaskytMac from '../../public/assets/Projects/baskyt/baskyt-mac.png'
 
 
 export const HOME_DATA = {
