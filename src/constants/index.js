@@ -102,7 +102,7 @@ export const PROJECTS = [
       media: [
         {
         type: 'image',
-        src: '/assets/Projects/baskyt/baskyt.png'
+        src: '/assets/Projects/baskyt/baskyt-banner.png'
         },
 
         {
@@ -120,7 +120,7 @@ export const PROJECTS = [
         src: '/assets/Projects/baskyt/baskyt-mac.png'
         }
       ],
-      banner: '/assets/Projects/baskyt/baskyt.png',
+      banner: '/assets/Projects/baskyt/baskyt-banner.png',
       techstack: "MongoDB, Express, React, Node.js, Redux",
       projecttype: "Full Stack Web App",
       tags: ['react', 'mongo', 'node', 'socket.io']
