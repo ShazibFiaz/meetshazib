@@ -62,9 +62,15 @@ export default function Navbar() {
                     isVisible ? "translate-y-0" : "-translate-y-full"
                 } hidden lg:flex`}
             >
-                <div className="text-4xl font-bold text-[#FEC544] tracking-wide uppercase mr-40">
+                {/* <div className="text-4xl font-bold text-[#FEC544] tracking-wide uppercase mr-40">
                     U<span className="text-white">sama</span>
-                </div>
+                </div> */}
+                <img 
+                src="/assets/logoNew.png" 
+                alt="Usama Logo" 
+                className="h-12 mr-40" 
+                />
+
                 <ul className="flex gap-6 items-center">
                     <CreateMenus setActiveLink={setActiveLink} activeLink={activeLink} />
                 </ul>

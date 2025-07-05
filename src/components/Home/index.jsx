@@ -144,12 +144,12 @@ useEffect(() => {
       <div className="flex flex-col items-center justify-center sm:hidden md:hidden mt-10">
       
         <div className="mt-10 w-50 h-50 relative z-20 rounded-full overflow-hidden border-4 border-white shadow-lg">
-   <img
-        src={profileImage}
-        alt="Profile Picture"
-        className="object-cover w-full h-full"
-        style={{ objectFit: 'cover' }}
-      />
+        <img
+          src={profileImage}
+          alt="Profile Picture"
+          className="object-cover w-full h-full"
+          style={{ objectFit: 'cover' }}
+        />
         </div>
         <div className="mt-4 mb-[-100px] z-20 flex flex-row gap-4">
           {socialIcons.map((item) => (
@@ -167,14 +167,11 @@ useEffect(() => {
       </div>
 
       <motion.div className="absolute right-0 top-0 h-full w-full sm:w-[50%] lg:w-[60%] xl:w-[60%] flex items-center justify-end overflow-visible">
-        <motion.div
-        layout // Enables smooth resizing animations
-        animate={{
-          width: socialIcons.length * 185 + 40, // Adjust dynamically based on the number of icons
-        }}
-          style={{ x: socialX }}
-          className="relative flex flex-col bottom-10 items-start mt-auto bg-gray-800 px-5 py-3 rounded-l-full border border-white/30 shadow-lg z-100 hidden sm:flex w-[515px]"
-        >
+<motion.div
+  layout
+  style={{ x: socialX }}
+  className="relative flex flex-col bottom-10 items-start mt-auto bg-gray-800 px-5 py-3 rounded-full border border-white/30 shadow-lg z-100 hidden sm:flex"
+>
           <div className="flex gap-3">
             {socialIcons.map((item) => (
               <motion.a

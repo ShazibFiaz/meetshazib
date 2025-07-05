@@ -195,4 +195,20 @@ export const REVIEWS = [
     link: "https://thompsontech.com/testimonials/john-doe",
     rating: 5,
   },
+    {
+    author: "Sarah Thompson",
+    content:
+      "Working with John was a fantastic experience. He delivered our project ahead of schedule and exceeded expectations in both design and functionality.",
+    company: "Thompson Tech Solutions",
+    link: "https://thompsontech.com/testimonials/john-doe",
+    rating: 5,
+  },
+    {
+    author: "Sarah Thompson",
+    content:
+      "Working with John was a fantastic experience. He delivered our project ahead of schedule and exceeded expectations in both design and functionality.",
+    company: "Thompson Tech Solutions",
+    link: "https://thompsontech.com/testimonials/john-doe",
+    rating: 5,
+  }
 ];
