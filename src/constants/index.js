@@ -82,7 +82,7 @@ export const PROJECTS = [
     name: "Chirp – Twitter Clone",
     description: `Chirp is a minimalist Twitter clone focused on speed, simplicity, and real-time interaction. Users can sign up, log in, and share short text-based updates in a clean, distraction-free UI. Built with React, Node.js, and Socket.io, Chirp enables real-time tweet delivery and live feed updates. Authentication is handled using JWT, while MongoDB powers backend data storage. Developed as a solo full-stack project, Chirp shows how modern technologies can create a smooth, responsive social experience with real-time communication at its core.`,
     shortdescription:
-      "Chirp is a minimalist Twitter clone focused on speed, simplicity, and real-time interaction.",
+      "Twitter clone focused on speed, simplicity, and real-time interaction.",
     github: "https://github.com/johndoe/taskmaster-pro",
     media: [
       {
@@ -151,7 +151,7 @@ export const PROJECTS = [
   },
   {
     id: "chitchat",
-    name: "ChitChat – Real-Time Messaging App",
+    name: "ChitChat",
     description: `
       ChitChat is my take on making digital conversations feel more real. With features like real-time messaging, typing indicators, and group chats, it mimics the ease of in-person chats. 
       
@@ -187,6 +187,70 @@ export const PROJECTS = [
     projecttype: "Full Stack Web App",
     tags: ["react", "mongo", "node", "socket.io"],
   },
+  {
+  id: "marketmind",
+  name: "MarketMind",
+  description: `
+    MarketMind is a geo-intelligence dashboard built to help businesses visualize market trends and unlock smarter Route-to-Market strategies.
+
+    It dynamically maps marketing data onto an interactive geo-interface—highlighting growth zones, market potential, and regional performance insights in real time.
+
+    Built with Mapbox, React, and Node.js, MarketMind delivers clean visualizations, fast performance, and region-level targeting for data-driven expansion decisions.
+  `,
+  shortdescription: `Visualize regional trends to support smarter Route-to-Market decisions.`,
+  github: "https://github.com/yourusername/market-mind",
+  media: [
+    {
+      type: "image",
+      src: "/assets/Projects/marketmind/marketmind.png",
+    },
+    {
+      type: "video",
+      src: "/assets/Projects/marketmind/marketmindvid.mp4",
+    },
+    {
+      type: "image",
+      src: "/assets/Projects/marketmind/market-mind-mob.png",
+    }
+  ],
+  banner: "/assets/Projects/marketmind/marketmind.png",
+  techstack: "React, Node.js, Mapbox, Express, MongoDB",
+  projecttype: "Data Visualization Dashboard",
+  tags: ["react", "node", "mapbox", "geo", "data-viz"],
+},
+{
+  id: "retailpulse",
+  name: "RetailPulse ",
+  description: `
+    RetailPulse is an advanced retail analytics platform that transforms raw audit data into actionable insights for brands and distributors.
+
+    It empowers teams with real-time visibility into market share, shelf presence, and execution gaps—enabling smarter strategic planning and on-ground action.
+
+    Built using React, Node.js, and MongoDB, RetailPulse visualizes data through clean dashboards, regional heatmaps, and SKU-level performance metrics to support field excellence and data-driven decisions.
+  `,
+  shortdescription: `Advanced retail analytics platform for market insights.`,
+  github: "https://github.com/yourusername/retailpulse",
+  media: [
+    {
+      type: "image",
+      src: "/assets/Projects/retailpulse/retailpulse.png",
+    },
+    {
+      type: "video",
+      src: "/assets/Projects/retailpulse/retailpulse-demo.mp4",
+    },
+    {
+      type: "image",
+      src: "/assets/Projects/retailpulse/retailpulse-mobile.png",
+    }
+  ],
+  banner: "/assets/Projects/retailpulse/retailpulse.png",
+  techstack: "React, Node.js, MongoDB, Express, Chart.js",
+  projecttype: "Retail Analytics Dashboard",
+  tags: ["react", "node", "retail", "analytics"]
+}
+
+
 ];
 
 export const SERVICES = [
