@@ -1,6 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "motion/react";
 
+
+
 import AnimationWrapper from "../AnimationWrapper";
 
 export default function ClientProjectView({ data }) {
