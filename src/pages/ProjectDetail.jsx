@@ -1,16 +1,20 @@
-import {  useState } from "react";
+// import {  useState } from "react";
 import {FaGithub } from "react-icons/fa";
 import { IoIosGlobe } from "react-icons/io";
 import { MdAndroid } from "react-icons/md";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { PROJECTS } from "../constants";
+import { useParams } from "react-router-dom";
 
 export default function ProjectDetail() {
-    const [lightboxOpen, setLightboxOpen] = useState(false);
-    const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+    //TODO : implement lightbox later 
+    // const [lightboxOpen, setLightboxOpen] = useState(false);
+    // const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const { id } = useParams();
 
-    const project = PROJECTS[0]
+  const project = PROJECTS.find(proj => proj.id === id);
+
     const processText = (text) => {
         return text.replace(/\\n/g, "\n").split("\n").map((line, index) => {
             if (line.startsWith("- ")) {
@@ -33,9 +37,9 @@ export default function ProjectDetail() {
 
   const renderMediaItem = (media, index) => {
     console.log(media, "media")
-  media.type === 'video' ? (
+     return media.type === 'video' ? (
       <video
-        src={media}
+        src={media.src}
         autoPlay
         loop
         muted
@@ -48,19 +52,13 @@ export default function ProjectDetail() {
       />
     ) : (
       <img 
-        src={media} 
+        src={media.src} 
         alt={media.caption || `Media ${index + 1}`} 
                                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105"
       />
     );
 }
-
-    /** ✅ CHANGE: Ensure `imageUrl` is always treated as an array */
-    const images = Array.isArray(project.imageUrl) ? project.imageUrl : [project.imageUrl];
-
-    /** ✅ CHANGE: Include `imageUrl` array images along with other images */
-    const allImages = [...images ].filter(Boolean);
-    const lightboxImages = allImages.map((img) => ({ src: img }));
+    // const lightboxImages = allImages.map((img) => ({ src: img }));
 
     return (
         <div className="w-full min-h-screen bg-gray-900 text-white px-6 md:px-16 lg:px-32 py-12">
@@ -136,44 +134,16 @@ export default function ProjectDetail() {
 
                 <div className="w-full lg:w-2/5 relative">
                     <div className="space-y-6 flex flex-wrap justify-center lg:block">
-                        {allImages.map((img, index) => 
-                        // {
-                        //     return renderMediaItem(img, index)
-                        // }
-                            
-                            <img
-                                key={index}
-                                src={img}
-                                alt={project.name}
-                                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105"
-                                onClick={() => {
-                                    setSelectedImageIndex(index);
-                                    setLightboxOpen(true);
-                                }}
-                            />
-
-    //                          <video
-    //     src={img}
-    //     autoPlay
-    //     loop
-    //     muted
-    //     playsInline
-    //     disablePictureInPicture
-    //     controlsList="nodownload nofullscreen noremoteplayback"
-    //     onContextMenu={(e) => e.preventDefault()}
-    // className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105"
-
-    //   />
-    
-
-                          
-
+                        {project.media.map((img, index) => 
+                        {
+                            return renderMediaItem(img, index)
+                        }
                         )}
                     </div>
                 </div>
             </div>
 
-            <Lightbox
+            {/* <Lightbox
                 open={lightboxOpen}
                 close={() => setLightboxOpen(false)}
                 slides={lightboxImages}
@@ -185,7 +155,7 @@ export default function ProjectDetail() {
                         backgroundColor: "rgba(0, 0, 0, 0.2)" 
                     }
                 }}
-            />
+            /> */}
         </div>
     );
 }
