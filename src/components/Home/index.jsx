@@ -6,7 +6,7 @@ import { FaSlack,FaStackOverflow } from "react-icons/fa";
 
 import { Button } from "@headlessui/react";
 import { Typewriter } from "react-simple-typewriter";
-import profileImage from "../../../public/assets/profileImage.png";
+import profileImage from "/assets/profileImage.png";
 import * as THREE from "three";
 
 function variants() {
