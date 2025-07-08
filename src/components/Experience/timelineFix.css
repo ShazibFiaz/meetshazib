@@ -1,4 +1,0 @@
-/* Hide the line above the first timeline item */
-.first-timeline-item::before {
-    display: none !important;
-}
