@@ -78,11 +78,11 @@ export function Header() {
             Resume
           </NavHashLink> */}
           <NavHashLink smooth to="#project" onClick={closeMenu}>
-            Project
+            Projects
           </NavHashLink>
-          <NavHashLink smooth to="#contact" onClick={closeMenu}>
+          {/* <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
-          </NavHashLink>
+          </NavHashLink> */}
         </nav>
 
         <div className="header-controls">
