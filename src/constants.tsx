@@ -5,7 +5,8 @@ import headerLogo from "../src/assets/logo.png";
 import headerLogLight from "../src/assets/logo-light.png";
 
 //SOCIALS
-import linkedin from "../src/assets/socials/linkedin.svg";
+// import linkedin from "../src/assets/socials/linkedin.svg";
+import stackoverflow from "../src/assets/socials/stackoverflow.svg";
 import githubIcon from "../src/assets/socials/github.svg";
 import upwork from "../src/assets/socials/upwork.svg";
 
@@ -43,10 +44,15 @@ export const DEVELOPER_DATA = {
 };
 
 export const SOCIALS = [
-  {
-    title: "LinkedIn",
-    img: linkedin,
-    url: "https://www.linkedin.com/in/usama455/",
+  // {
+  //   title: "LinkedIn",
+  //   img: linkedin,
+  //   url: "https://www.linkedin.com/in/usama455/",
+  // },
+    {
+    title: "StackOverflow",
+    img: stackoverflow,
+    url: "https://stackoverflow.com/users/11900502/muhammad-usama",
   },
   {
     title: "Github",
@@ -252,3 +258,39 @@ export const PROJECTS = [
   techstack: ["React", "Node.js", "MongoDB", "Express", "Chart.js"],
 }
 ]
+
+export const EXPERIENCE = [
+  {
+    role: "Lead Full Stack Developer",
+    company: "OneStream Live",
+    location: "Helsinki, Finland (Remote)",
+    year: "2022 - Present",
+    description: "Led the architecture and development of a scalable live streaming SaaS platform, managed a remote team, implemented real-time collaboration features, and optimized backend performance using modern DevOps practices.",
+    technologies: ["React", "Node.js", "TypeScript", "MySQL", "Redux-Saga", "Tailwind CSS", "Socket.IO"]
+  },
+  {
+    role: "Full Stack Developer",
+    company: "AI Sight",
+    location: "Lahore, Pakistan",
+    year: "2021 - 2022",
+    description: "Developed real-time analytics dashboards and data visualization tools, integrated marketing APIs, automated cloud data processes, and improved user engagement through interactive UI features and Socket.IO-based updates.",
+    technologies: ["React", "Node.js", "Socket.IO", "Chart.js", "AWS", "Python", "Bash"]
+  },
+  {
+    role: "Full Stack Developer",
+    company: "Isaac’s Code",
+    location: "Islamabad, Pakistan",
+    year: "2020 - 2021",
+    description: "Built a food delivery application with secure JWT authentication, integrated third-party APIs for payments and maps, and enhanced user experience with clean UI and responsive design.",
+    technologies: ["React", "Node.js", "MySQL", "JWT", "Stripe", "Google Maps"]
+  },
+  {
+    role: "Associate Software Developer",
+    company: "PearlGates Software Solutions",
+    location: "Lahore, Pakistan",
+    year: "2019 - 2020",
+    description: "Created a smart home web app using React and Node.js, enabled real-time device control, and worked on IoT systems using AWS services, Raspberry Pi, and XBee modules.",
+    technologies: ["React", "Node.js", "Socket.IO", "AWS", "Raspberry Pi", "Material-UI"]
+  }
+];
+
