@@ -38,7 +38,7 @@ export function About() {
     <Container id="about">
       <div className="about-text">
         <ScrollAnimation animateIn="fadeInLeft">
-          <h2>About me</h2>
+          <h2>Why Hire Me For Your Next Project?</h2>
         </ScrollAnimation>
         {DEVELOPER_DATA.about.map((data, index) => {
           return (
