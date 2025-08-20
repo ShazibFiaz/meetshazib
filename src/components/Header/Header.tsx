@@ -62,7 +62,7 @@ export function Header() {
         <HashLink smooth to="#home" className="logo">
           <img
             src={isLightTheme ? DEVELOPER_DATA.logoLightTheme : DEVELOPER_DATA.logo}
-            alt="Meet Usama Logo"
+            alt="Meet Shazib Logo"
             className="logo-image"
           />
         </HashLink>
