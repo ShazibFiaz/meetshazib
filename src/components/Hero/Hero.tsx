@@ -57,7 +57,7 @@ export function Hero() {
         </ScrollAnimation>
         <div className="hero-image-mobile">
           <ScrollAnimation animateIn="fadeInRight" delay={1.2 * 1000}>
-            <img src={DEVELOPER_DATA.img} alt="Usama" />
+            <img src={DEVELOPER_DATA.img} alt="Shazib" />
           </ScrollAnimation>
         </div>
       </div>
