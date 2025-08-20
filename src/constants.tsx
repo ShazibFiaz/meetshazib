@@ -36,7 +36,7 @@ import amwayLtdBanner from "../src/assets/projects/amwayltd.png";
 export const DEVELOPER_DATA = {
   heading: "Meet Shazib",
   img: profileImage,
-  jobTitle: "Full Stack Developer",
+  jobTitle: "Full Stack Java Developer",
   subheading: "6+ Years of Experience",
   about: [
     `I'm the engineer who genuinely enjoys reading documentation and solving complex problems.`,
