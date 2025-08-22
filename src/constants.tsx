@@ -22,6 +22,7 @@ import nodeJSIcon from "../src/assets/skills/nodejs.svg";
 import reduxIcon from "../src/assets/skills/redux.svg";
 import vueIcon from "../src/assets/skills/vue-icon.svg";
 import springBootIcon from "../src/assets/skills/spring-boot-logo.svg"
+import javaIcon from "../src/assets/skills/java-.svg"
 
 
 //PROJECTS
@@ -101,7 +102,7 @@ export const STATS = [
 export const SKILLS = [
   {
     title: "Java",
-    img: reactIcon,
+    img: javaIcon,
     percentage: 90,
   },
 

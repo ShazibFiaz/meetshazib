@@ -32,22 +32,29 @@ export const Container = styled.section`
         background-color: var(--secondary);
       }
 
-      .project-banner{
-        width: 100%;
-        aspect-ratio: 16/9;
-        overflow: hidden;
-        
-        .banner-image{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.25s ease;
-        }
-        
-        &:hover .banner-image{
-          transform: scale(1.05);
-        }
-      }
+ .project-banner {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative; /* makes child absolutely fill */
+  overflow: hidden;
+
+  .banner-image {
+    position: absolute;   /* force it to fill */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* ensures cover fill */
+    display: block;
+    transition: transform 0.25s ease;
+  }
+
+  &:hover .banner-image {
+    transform: scale(1.05);
+  }
+}
+
+
       
       .body{
         padding: 2rem 1.8rem;
